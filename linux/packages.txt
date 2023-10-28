@@ -1,0 +1,4 @@
+tmux (github >=3.3a)
+fzf (apt)
+nvim (apt)
+
