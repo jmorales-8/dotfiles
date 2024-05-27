@@ -121,6 +121,11 @@ fi
 # Add alias for easy re-sourcing of this file
 alias bashrc='. ~/.bashrc'
 
+# Add alias to print PATH
+path() {
+    echo "${PATH//:/$'\n'}"
+}
+
 # Aliases and other settings
 #alias vim='nvim'
 export EDITOR='usr/bin/nvim'
@@ -132,3 +137,6 @@ mcd() {			# Shorthand
     mkdir -p $@
     cd $@
 }
+
+export PATH="$PATH:/opt/nvim-linux64/bin"
+
