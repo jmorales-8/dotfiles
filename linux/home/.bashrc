@@ -130,7 +130,6 @@ path() {
 #alias vim='nvim'
 export EDITOR='usr/bin/nvim'
 
-alias cdw='projects'	# Shorthand
 alias ll='ls -la'	# Shorthand
 alias mkdir='mkdir -p'	# Always create parent directories if they don't exist
 mcd() {			# Shorthand
@@ -138,5 +137,9 @@ mcd() {			# Shorthand
     cd $@
 }
 
-export PATH="$PATH:/opt/nvim-linux64/bin"
+# zoxide setup if it exists
+if which zoxide &> /dev/null; then
+    eval "$(zoxide init bash)"
+fi
 
+export PATH="$PATH:/opt/nvim-linux64/bin"
