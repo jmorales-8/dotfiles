@@ -7,6 +7,8 @@ fd-find
 ripgrep
 stow
 
-OTHER
+GITHUB
 ---------------------
-nvim (install manually from github)
+nvim (https://github.com/neovim/neovim)
+zoxide (https://github.com/ajeetdsouza/zoxide)
+
