@@ -142,4 +142,10 @@ if which zoxide &> /dev/null; then
     eval "$(zoxide init bash)"
 fi
 
+# Update PATH with application locations
+
+# Neovim
 export PATH="$PATH:/opt/nvim-linux64/bin"
+#
+# Local installations
+export PATH="$PATH:~/.local/bin"
