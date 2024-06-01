@@ -5,6 +5,7 @@ fzf
 tree
 fd-find
 ripgrep
+stow
 
 OTHER
 ---------------------
