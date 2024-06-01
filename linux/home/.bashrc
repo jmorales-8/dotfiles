@@ -138,9 +138,7 @@ mcd() {			# Shorthand
 }
 
 # zoxide setup if it exists
-if which zoxide &> /dev/null; then
-    eval "$(zoxide init bash)"
-fi
+eval "$(zoxide init bash)"
 
 # Update PATH with application locations
 
